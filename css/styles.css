@@ -114,9 +114,8 @@
     line-height: 2rem;
   }
 
-<<<<<<< Updated upstream
-=======
-  /*About*/
+
+ 
   
 /*About*/
 .about-container {
@@ -258,7 +257,7 @@
   transform: translateX(-50%);
 }
 
-
+/*Contact*/
   .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
@@ -354,7 +353,7 @@
   }
 
 /*controls*/
->>>>>>> Stashed changes
+
   .controls {
   position: fixed;
   z-index: 10;
@@ -413,11 +412,9 @@
 .theme-btn i {
   font-size: 1.4rem;
   color: var(--color-grey-2);
-  pointer-events: none;
-<<<<<<< Updated upstream
+  pointer-events: none
 }
-=======
-}
+
 
 
 .contact-content-con {
@@ -440,4 +437,83 @@
 .contact-content-con .right-contact {
   margin-bottom: 6rem;
 }
->>>>>>> Stashed changes
+
+@media screen and (max-width: 1070px) {
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+
+  .main-title h2 {
+    font-size: 4rem;
+  }
+  .main-title h2 span {
+    font-size: 4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .container {
+    padding: 7rem 6rem;
+  }
+
+  .about-container .left-about {
+    padding-right: 0rem;
+  }
+
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  .left-header .h-shape {
+    display: none;
+  }
+  .left-header .image {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .right-header {
+    grid-row: 1;
+    padding-right: 0rem !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+    text-align: center;
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 7rem 3rem;
+  }
+
+  .about-stats .progress-bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4rem;
+  }
+}
