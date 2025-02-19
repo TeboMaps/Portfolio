@@ -279,7 +279,7 @@
                 </div>
                 <div class="right-contact">
                     <form action="https://formspree.io/f/xovjpgjg" method="POST" class="contact-form" id="myForm">
-                        <!-- Remove Web3Forms access_key and add Formspree hidden fields if needed -->
+                     
                         <div class="input-control i-c-2">
                           <input type="text" name="name" required placeholder="Your Name">
                           <input type="email" name="email" required placeholder="Your Email">
@@ -301,7 +301,25 @@
             </div>
         </div>
     </section>
+
+    <!--Chatbot-->
+    <section class="container" id="chatbot">
+        <div class="chat-header">
+            <h1>Chatbot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    
+    
+    </section>
+  
 </main>
+
+
+
 
 <!--Side controls-->
     <div class="controls">
@@ -316,7 +334,7 @@
             <i class="fas fa-envelope-open"></i>
         </div>
     
-        <div class="control" data-id="blogs">
+        <div class="control" data-id="chatbot">
             <i class="fa-solid fa-robot"></i>
         </div>
       
