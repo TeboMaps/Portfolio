@@ -61,13 +61,17 @@ function sendMessage() {
         appendMessage('bot', response);
     }, 1000);
 }
- 
+
+
 function appendMessage(sender, message) {
     const messageElement = document.createElement('div');
     messageElement.classList.add('message', sender);
     messageElement.textContent = message;
     chatWindow.appendChild(messageElement);
     chatWindow.scrollTop = chatWindow.scrollHeight;
+   
+ 
+    
 }
  
 function getBotResponse(userMessage) {
@@ -99,6 +103,6 @@ function matches(input, keywords) {
  
 // Initial chatbot message
 setTimeout(() => {
-    appendMessage('bot', 'Hey there! 👋 I am Tebogo Maphatsoe, your virtual assistant. How can I help you today?');
+    appendMessage('bot', 'Hey there! 👋 I am TeeBot, your virtual assistant. How can I help you today?');
 }, 500);
  
